@@ -1,0 +1,10 @@
+{
+  "name": "vox",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node build.js"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  }
+}

@@ -1,0 +1,48 @@
+//========================
+//        SYNTAX
+//========================
+
+$breakpoints: (
+    not_big:(
+        size: toEm(1080px,16px),
+        syntax: "\\@nb" 
+    ),
+    medium:(
+        size: toEm(780px,16px),
+        syntax: "\\@md" 
+    ),
+    small:(
+        size: toEm(510px,16px),
+        syntax: "\\@sm"
+    )
+);
+
+//modifier
+
+$add_mod_if_number: true;
+$modifier: '-';
+
+$breakpoint_logic: 'max-width';
+
+//========================
+//        SPACING
+//========================
+
+$sides: 'left','right','bottom','top';
+
+//========================
+//        COLORS
+//========================
+
+$palette: (
+    gray: (
+        +1:     #4A4A4A,
+        base:   #8B8D8E,
+        -1:     #494949,
+    ),
+    cyan:(
+        +1:     #97C7E0,
+        base:   #09c,
+        -1:     #0075B0,
+    )
+);
