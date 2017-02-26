@@ -1,21 +1,21 @@
-@each $color_key,$color_val in $palette{
+@each $hue_name,$hue_tones in $palette{
 
-    @each $tone_key,$tone_val in $color_val{
-        @if $tone_key == 'base'{
-            .c#{$mod}#{$color_key}{
-                color: $tone_val
+    @each $tone_name,$tone_value in $hue_tones{
+        @if $tone_name == 'base'{
+            .c#{$mod}#{$hue_name}{
+                color: $tone_value
             }
-            .bg#{$mod}#{$color_key}{
-                background-color: $tone_val
+            .bg#{$mod}#{$hue_name}{
+                background-color: $tone_value
             }
         }
 
         @else {
-            .c#{$mod}#{$color_key}#{$mod_n}#{$tone_key}{
-                color: $tone_val
+            .c#{$mod}#{$hue_name}#{$mod_n}#{$tone_name}{
+                color: $tone_value
             }
-            .bg#{$mod}#{$color_key}#{$mod_n}#{$tone_key}{
-                background-color: $tone_val
+            .bg#{$mod}#{$hue_name}#{$mod_n}#{$tone_name}{
+                background-color: $tone_value
             }   
         }
     }  
