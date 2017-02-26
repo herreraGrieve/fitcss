@@ -1,9 +1,9 @@
 var sass = require('node-sass'),
     fs = require('fs');
 
-var sass_dir = 'scss/vox.scss',
+var sass_dir = 'scss/fit.scss',
     output_dir = 'css/',
-    output_css = output_dir + 'vox.css';
+    output_css = output_dir + 'fit.css';
 
 if (!fs.existsSync(output_dir)){
     fs.mkdirSync(output_dir);
@@ -19,7 +19,6 @@ sass.render({
     }
 
     if(!error){
-      // No errors during the compilation, write this result on the disk 
         fs.writeFile(output_css, result.css, function(err){
             if(err){
             console.log('\x1b[31m%s\x1b[0m', err);
