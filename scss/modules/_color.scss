@@ -2,19 +2,19 @@
 
     @each $tone_name,$tone_value in $hue_tones{
         @if $tone_name == 'base'{
-            .c#{$mod}#{$hue_name}{
+            .c#{$mod + $hue_name}{
                 color: $tone_value
             }
-            .bg#{$mod}#{$hue_name}{
+            .bg#{$mod + $hue_name}{
                 background-color: $tone_value
             }
         }
 
         @else {
-            .c#{$mod}#{$hue_name}#{$mod_n}#{$tone_name}{
+            .c#{$mod + $hue_name + $mod_n + $tone_name}{
                 color: $tone_value
             }
-            .bg#{$mod}#{$hue_name}#{$mod_n}#{$tone_name}{
+            .bg#{$mod + $hue_name + $mod_n + $tone_name}{
                 background-color: $tone_value
             }   
         }
