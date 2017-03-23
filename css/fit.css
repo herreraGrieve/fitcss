@@ -6,11 +6,11 @@
   background-color: #4A4A4A;
 }
 
-.c-gray- {
+.c-gray {
   color: #8B8D8E;
 }
 
-.bg-gray- {
+.bg-gray {
   background-color: #8B8D8E;
 }
 
@@ -30,11 +30,11 @@
   background-color: #97C7E0;
 }
 
-.c-cyan- {
+.c-cyan {
   color: #09c;
 }
 
-.bg-cyan- {
+.bg-cyan {
   background-color: #09c;
 }
 
@@ -44,4 +44,121 @@
 
 .bg-cyan--1 {
   background-color: #0075B0;
+}
+
+@media screen and (min-width: 67.5em) {
+  .c-gray-1\@nb {
+    color: #4A4A4A;
+  }
+  .bg-gray-1\@nb {
+    background-color: #4A4A4A;
+  }
+  .c-gray\@nb {
+    color: #8B8D8E;
+  }
+  .bg-gray\@nb {
+    background-color: #8B8D8E;
+  }
+  .c-gray--1\@nb {
+    color: #494949;
+  }
+  .bg-gray--1\@nb {
+    background-color: #494949;
+  }
+  .c-cyan-1\@nb {
+    color: #97C7E0;
+  }
+  .bg-cyan-1\@nb {
+    background-color: #97C7E0;
+  }
+  .c-cyan\@nb {
+    color: #09c;
+  }
+  .bg-cyan\@nb {
+    background-color: #09c;
+  }
+  .c-cyan--1\@nb {
+    color: #0075B0;
+  }
+  .bg-cyan--1\@nb {
+    background-color: #0075B0;
+  }
+}
+
+@media screen and (min-width: 48.75em) {
+  .c-gray-1\@md {
+    color: #4A4A4A;
+  }
+  .bg-gray-1\@md {
+    background-color: #4A4A4A;
+  }
+  .c-gray\@md {
+    color: #8B8D8E;
+  }
+  .bg-gray\@md {
+    background-color: #8B8D8E;
+  }
+  .c-gray--1\@md {
+    color: #494949;
+  }
+  .bg-gray--1\@md {
+    background-color: #494949;
+  }
+  .c-cyan-1\@md {
+    color: #97C7E0;
+  }
+  .bg-cyan-1\@md {
+    background-color: #97C7E0;
+  }
+  .c-cyan\@md {
+    color: #09c;
+  }
+  .bg-cyan\@md {
+    background-color: #09c;
+  }
+  .c-cyan--1\@md {
+    color: #0075B0;
+  }
+  .bg-cyan--1\@md {
+    background-color: #0075B0;
+  }
+}
+
+@media screen and (min-width: 31.875em) {
+  .c-gray-1\@sm {
+    color: #4A4A4A;
+  }
+  .bg-gray-1\@sm {
+    background-color: #4A4A4A;
+  }
+  .c-gray\@sm {
+    color: #8B8D8E;
+  }
+  .bg-gray\@sm {
+    background-color: #8B8D8E;
+  }
+  .c-gray--1\@sm {
+    color: #494949;
+  }
+  .bg-gray--1\@sm {
+    background-color: #494949;
+  }
+  .c-cyan-1\@sm {
+    color: #97C7E0;
+  }
+  .bg-cyan-1\@sm {
+    background-color: #97C7E0;
+  }
+  .c-cyan\@sm {
+    color: #09c;
+  }
+  .bg-cyan\@sm {
+    background-color: #09c;
+  }
+  .c-cyan--1\@sm {
+    color: #0075B0;
+  }
+  .bg-cyan--1\@sm {
+    background-color: #0075B0;
+  }
 }

@@ -1,22 +1,15 @@
-@each $hue_name,$hue_tones in $palette{
+@include media_queries(){
+    @each $hue_name,$hue_tones in $palette{
 
-    @each $tone_name,$tone_value in $hue_tones{
-        @if $tone_name == 'base'{
-            .c#{$mod + $hue_name}{
+        @each $tone_name,$tone_value in $hue_tones{
+            $tone_syntax: if($tone_name == 'base','',$mod_n + $tone_name);
+
+            .c#{$mod + $hue_name + $tone_syntax + $mq}{
                 color: $tone_value
             }
-            .bg#{$mod + $hue_name}{
-                background-color: $tone_value
-            }
-        }
-
-        @else {
-            .c#{$mod + $hue_name + $mod_n + $tone_name}{
-                color: $tone_value
-            }
-            .bg#{$mod + $hue_name + $mod_n + $tone_name}{
+            .bg#{$mod + $hue_name + $tone_syntax + $mq}{
                 background-color: $tone_value
             }   
-        }
-    }  
+        }  
+    }
 }
