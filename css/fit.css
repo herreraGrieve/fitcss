@@ -162,3 +162,230 @@
     background-color: #0075B0;
   }
 }
+
+@media screen and (min-width: 51.25em) {
+  .c-gray-1\@lg {
+    color: #4A4A4A;
+  }
+  .bg-gray-1\@lg {
+    background-color: #4A4A4A;
+  }
+  .c-gray\@lg {
+    color: #8B8D8E;
+  }
+  .bg-gray\@lg {
+    background-color: #8B8D8E;
+  }
+  .c-gray--1\@lg {
+    color: #494949;
+  }
+  .bg-gray--1\@lg {
+    background-color: #494949;
+  }
+  .c-cyan-1\@lg {
+    color: #97C7E0;
+  }
+  .bg-cyan-1\@lg {
+    background-color: #97C7E0;
+  }
+  .c-cyan\@lg {
+    color: #09c;
+  }
+  .bg-cyan\@lg {
+    background-color: #09c;
+  }
+  .c-cyan--1\@lg {
+    color: #0075B0;
+  }
+  .bg-cyan--1\@lg {
+    background-color: #0075B0;
+  }
+}
+
+.m--4 {
+  margin: -2rem;
+}
+
+.m--3 {
+  margin: -1rem;
+}
+
+.m--2 {
+  margin: -0.5rem;
+}
+
+.m--1 {
+  margin: -0.25rem;
+}
+
+.m-0 {
+  margin: 0rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.m-4 {
+  margin: 2rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.m-6 {
+  margin: 8rem;
+}
+
+@media screen and (min-width: 67.5em) {
+  .m--4\@nb {
+    margin: -2rem;
+  }
+  .m--3\@nb {
+    margin: -1rem;
+  }
+  .m--2\@nb {
+    margin: -0.5rem;
+  }
+  .m--1\@nb {
+    margin: -0.25rem;
+  }
+  .m-0\@nb {
+    margin: 0rem;
+  }
+  .m-1\@nb {
+    margin: 0.25rem;
+  }
+  .m-2\@nb {
+    margin: 0.5rem;
+  }
+  .m-3\@nb {
+    margin: 1rem;
+  }
+  .m-4\@nb {
+    margin: 2rem;
+  }
+  .m-5\@nb {
+    margin: 4rem;
+  }
+  .m-6\@nb {
+    margin: 8rem;
+  }
+}
+
+@media screen and (min-width: 48.75em) {
+  .m--4\@md {
+    margin: -2rem;
+  }
+  .m--3\@md {
+    margin: -1rem;
+  }
+  .m--2\@md {
+    margin: -0.5rem;
+  }
+  .m--1\@md {
+    margin: -0.25rem;
+  }
+  .m-0\@md {
+    margin: 0rem;
+  }
+  .m-1\@md {
+    margin: 0.25rem;
+  }
+  .m-2\@md {
+    margin: 0.5rem;
+  }
+  .m-3\@md {
+    margin: 1rem;
+  }
+  .m-4\@md {
+    margin: 2rem;
+  }
+  .m-5\@md {
+    margin: 4rem;
+  }
+  .m-6\@md {
+    margin: 8rem;
+  }
+}
+
+@media screen and (min-width: 31.875em) {
+  .m--4\@sm {
+    margin: -2rem;
+  }
+  .m--3\@sm {
+    margin: -1rem;
+  }
+  .m--2\@sm {
+    margin: -0.5rem;
+  }
+  .m--1\@sm {
+    margin: -0.25rem;
+  }
+  .m-0\@sm {
+    margin: 0rem;
+  }
+  .m-1\@sm {
+    margin: 0.25rem;
+  }
+  .m-2\@sm {
+    margin: 0.5rem;
+  }
+  .m-3\@sm {
+    margin: 1rem;
+  }
+  .m-4\@sm {
+    margin: 2rem;
+  }
+  .m-5\@sm {
+    margin: 4rem;
+  }
+  .m-6\@sm {
+    margin: 8rem;
+  }
+}
+
+@media screen and (min-width: 51.25em) {
+  .m--4\@lg {
+    margin: -2rem;
+  }
+  .m--3\@lg {
+    margin: -1rem;
+  }
+  .m--2\@lg {
+    margin: -0.5rem;
+  }
+  .m--1\@lg {
+    margin: -0.25rem;
+  }
+  .m-0\@lg {
+    margin: 0rem;
+  }
+  .m-1\@lg {
+    margin: 0.25rem;
+  }
+  .m-2\@lg {
+    margin: 0.5rem;
+  }
+  .m-3\@lg {
+    margin: 1rem;
+  }
+  .m-4\@lg {
+    margin: 2rem;
+  }
+  .m-5\@lg {
+    margin: 4rem;
+  }
+  .m-6\@lg {
+    margin: 8rem;
+  }
+}

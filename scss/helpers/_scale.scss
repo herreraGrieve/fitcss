@@ -1,0 +1,41 @@
+$scale: "";
+$side_pos: "";
+
+$scale_conf: (
+    ratio: $positive_scale_ratio,
+    max_step: $positive_steps,
+    min_step: $negative_steps,
+    base_positive: $base_positive_number,
+    base_negative: $base_negative_number
+);
+
+$sc_val: 0;
+$sc_i: 0;
+
+@mixin scale($scale_conf: $scale_conf){
+
+    $neg_values :   reverse(growthList(
+                        map-get($scale_conf,base_negative),
+                        map-get($scale_conf,ratio),
+                        map-get($scale_conf,min_step)
+                    ));
+
+    $positive_values :  growthList(
+                            map-get($scale_conf,base_positive),
+                            map-get($scale_conf,ratio),
+                            map-get($scale_conf,max_step)
+                        );
+    
+    $total_scale: join($neg_values,0);
+    $total_scale: join($total_scale,$positive_values);
+    $sc_i: map-get($scale_conf,min_step) * -1 !global;
+
+    @each $val in $total_scale{
+      $sc_val: $val !global;
+      @content
+      $sc_i: $sc_i + 1 !global;
+    }
+
+    $sc_val: 0 !global;
+    $sc_i: 0 !global;
+}

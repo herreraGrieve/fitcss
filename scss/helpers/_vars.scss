@@ -1,2 +1,4 @@
 $mod: $modifier;
 $mod_n: if($prefix_number_with_modifier,$modifier,'');
+
+$sides: 'left','right','bottom','top';
