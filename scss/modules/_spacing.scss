@@ -1,0 +1,7 @@
+@include media_queries(){
+    @include scale(){
+        .m#{$mod_n + $sc_i + $mq}{
+         	margin: $sc_val+rem;
+        }
+    }
+}

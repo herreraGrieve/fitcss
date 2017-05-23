@@ -14,6 +14,10 @@ $breakpoints: (
     small:(
         size: toEm(510px,16px),
         syntax: "\\@sm"
+    ),
+    large:(
+        size: toEm(820px,16px),
+        syntax: "\\@lg"
     )
 );
 
@@ -27,8 +31,16 @@ $breakpoint_logic: 'max-width';
 //========================
 //        SPACING
 //========================
+$positive_scale_ratio: 2;
+$negative_scale_ratio: $positive_scale_ratio * -1;
 
-$sides: 'left','right','bottom','top';
+$base_positive_number: 0.25;
+$base_negative_number: $base_positive_number * -1;
+
+$positive_steps: 6;
+$negative_steps: 4;
+
+
 
 //========================
 //        COLORS
@@ -44,5 +56,5 @@ $palette: (
         +1:     #97C7E0,
         base:   #09c,
         -1:     #0075B0,
-    )
+    ),
 );
