@@ -1,3 +1,36 @@
 @function toEm($size,$font-size){
 	@return ($size / $font-size) + em
 }
+
+@function prepend($list, $value) {
+	@return join($value, $list);
+}
+
+
+@function reverse($list, $recursive: false) {
+   $result: ();
+
+   @for $i from length($list)*-1 through -1 {
+      @if type-of(nth($list, abs($i))) == list and $recursive {
+        $result: append($result, reverse(nth($list, abs($i)), $recursive));      
+      }
+
+      @else {
+        $result: append($result, nth($list, abs($i)));
+      }
+   }
+
+   @return $result;
+}
+
+@function growthList($initVal,$ratio,$steps){
+
+  $resultArray: $initVal;
+  $step: 1;
+  @while $step < $steps{
+    $initVal: $initVal * $ratio;
+    $resultArray: append($resultArray,$initVal);
+    $step: $step + 1;
+  }
+  @return $resultArray
+}
